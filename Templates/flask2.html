@@ -1,0 +1,9 @@
+{%extends "init.html"%}
+{%block head%}myweb{%endblock%}
+{%block content%}
+<form action="{{url_for('details')}}" method="post">
+           <input name="FirstName",type="text",placeholder="First Name">
+           <input name="LastName",type="text",placeholder="Last Name">
+           <button>Submit!</button>
+</form>
+{%endblock%}          
